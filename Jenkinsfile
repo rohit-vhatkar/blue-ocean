@@ -8,20 +8,12 @@ pipeline {
     }
 
     stage('test') {
-      parallel {
+      
         stage('test') {
           steps {
             echo 'test stage'
           }
         }
-
-        stage('test-code') {
-          steps {
-            echo 'Test source code'
-          }
-        }
-
-      }
     }
 
     stage('uat') {
