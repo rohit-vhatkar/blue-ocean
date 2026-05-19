@@ -6,11 +6,12 @@ pipeline {
         echo 'Build stage'
       }
     }
+
     stage('test') {
-        steps {
-          echo 'test stage'
-        }
+      steps {
+        echo 'test stage'
       }
+    }
 
     stage('uat') {
       steps {
