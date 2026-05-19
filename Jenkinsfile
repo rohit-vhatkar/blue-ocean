@@ -13,12 +13,5 @@ pipeline {
       }
     }
 
-    stage('uat') {
-      steps {
-        sleep 10
-        echo 'after sleep'
-      }
-    }
-
   }
 }
